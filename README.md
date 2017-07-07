@@ -1,2 +1,2 @@
 # wpmarble.github.io
-Home page of Will Marble: http://williammarble.com
+Home page of Will Marble: http://williammarble.co
