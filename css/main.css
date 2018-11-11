@@ -1,4 +1,4 @@
-html, body, #container { height: 100%; overflow:auto }
+html, body, #container { height: 100%; overflow:scroll; }
 body > #container { height: auto; min-height: 100%; }
 body {
     margin: 60px auto;
