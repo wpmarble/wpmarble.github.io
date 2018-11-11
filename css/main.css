@@ -2,7 +2,7 @@ html, body, #container { height: 100%; overflow:scroll; }
 body > #container { height: auto; min-height: 100%; }
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 80%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
