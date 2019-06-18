@@ -4,7 +4,7 @@ html, body, #container {
 body > #container { height: auto; min-height: 100%; }
 body {
     margin: 60px auto;
-    width: 55%;
+    width: auto;
     max-width: 650px;
 }
 nav ul, footer ul {
