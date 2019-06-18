@@ -1,8 +1,11 @@
-html, body, #container { height: 100%; overflow:unset; }
+html, body, #container { 
+    height: 100%; overflow:unset; 
+}
 body > #container { height: auto; min-height: 100%; }
 body {
     margin: 60px auto;
-    width: 80%;
+    width: 55%;
+    max-width: 650px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
