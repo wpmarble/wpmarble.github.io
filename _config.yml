@@ -1,4 +1,4 @@
 name: William Marble
-markdown: rdiscount
+markdown: kramdown
 rdiscount:
     extensions: [smart]
