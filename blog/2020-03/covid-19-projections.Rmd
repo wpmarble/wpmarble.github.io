@@ -33,7 +33,7 @@ proj = dat %>%
   select(country, forecast_7_day, current_cases = total_cases, slope) %>% 
   mutate(doubling_time = log(2) / slope)
 
-us.current.print = prettyNum(max(proj$current_cases[proj$country=="United States"]), big.mark = ",")
+us.current.print = prettyNum(round(max(proj$current_cases[proj$country=="United States"]), -2), big.mark = ",")
 proj.us = proj$forecast_7_day[proj$country=="United States"]
 proj.us.print = prettyNum(1000*floor((proj.us)/1000), big.mark = ",")
 
@@ -70,7 +70,7 @@ Before discussing the findings, a caveat: I am not an epidemiologist, and I have
 
  
 
-This forecast suggests that there will be rapid spread of COVID-19 in the next week. Currently, [Johns Hopkins CSSE](https://github.com/CSSEGISandData) reports that there are `r us.current.print` cases in the United States. If the recent trend continues, the model projects that in 7 days, there will be over `r proj.us.print` cases in the United States. The number of cases in the U.S. is poised to double roughly roughly every `r us.double.rate.print` days. For reference, there has been a nearly [10-fold increase in confirmed cases](https://www.cnbc.com/2020/03/11/us-coronavirus-cases-surpass-1000-johns-hopkins-university-data-shows.html) over the past week --- a doubling roughly every 1.4 days (compared to my model-based estimate for the next week of `r round(us.double.rate,1)`). 
+This forecast suggests that there will be rapid spread of COVID-19 in the next week. Currently, [Johns Hopkins CSSE](https://github.com/CSSEGISandData) reports that there are about `r (us.current.print)` cases in the United States.^[This number is likely to be slightly off. The Johns Hopkins data appear to be double-counting some cases: most U.S. data are at the state level, while some states report county-level data. It's not clear to me which cases are double counted though, and several attempts to reduce double-counts generated time series that didn't look very plausible. As a result, I've kept all cases in.] If the recent trend continues, the model projects that in 7 days, there will be over `r proj.us.print` cases in the United States. The number of cases in the U.S. is poised to double roughly roughly every `r us.double.rate.print` days. For reference, there has been a nearly [10-fold increase in confirmed cases](https://www.cnbc.com/2020/03/11/us-coronavirus-cases-surpass-1000-johns-hopkins-university-data-shows.html) over the past week --- a doubling roughly every 1.4 days (compared to my model-based estimate for the next week of `r round(us.double.rate,1)`). 
 
 The average doubling time worldwide is slower, at `r round(log(2)/slope.mean, 1)` days. But there are significant differences is growth rate in different countries. In other countries that are struggling to contain COVID-19 --- including Italy, Iran, Germany, and Spain --- the disease is spreading nearly as fast as in the U.S. Meanwhile, the model estimates that several countries whose outbreaks started sooner have significantly slowed the spread. In China --- the epicenter of the pandemic --- the estimated doubling time is about `r china.double.rate.print` days. In South Korea, where there has been a large-scale response, the estimate is about `r sk.double.rate.print` days. 
 
