@@ -1,0 +1,167 @@
+---
+title: "Short-Term COVID-19 Projections"
+author: "William Marble"
+date: "March 11, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+library(lubridate)
+library(dplyr)
+library(xtable)
+library(knitr)
+library(kableExtra)
+library(lme4)
+library(ggplot2)
+
+dat = readRDS("../out/clean_data_projections.rds")
+mod = readRDS("../out/model_results.rds")
+dec = readRDS("../out/decay_rate.rds")
+
+delta.opt.rmse = dec$delta[which.min(dec$rmse_pct)]
+delta.opt.mae = dec$delta[which.min(dec$mae_pct)]
+
+slope.mean = fixef(mod)["days_since_first_case"]
+
+today = max(dat$date[!dat$future])
+fc.date = max(dat$date)
+
+proj = dat %>% 
+  distinct(country, forecast_7_day, .keep_all = TRUE) %>% 
+  select(country, forecast_7_day, current_cases = total_cases, slope) %>% 
+  mutate(doubling_time = log(2) / slope)
+
+us.current.print = prettyNum(max(proj$current_cases[proj$country=="United States"]), big.mark = ",")
+proj.us = proj$forecast_7_day[proj$country=="United States"]
+proj.us.print = prettyNum(1000*floor((proj.us)/1000), big.mark = ",")
+
+us.double.rate = log(2)/proj$slope[proj$country=="United States"]
+us.double.rate.print = round(us.double.rate)
+
+china.double.rate = log(2)/proj$slope[proj$country=="China"]
+china.double.rate.print = round(china.double.rate)
+
+sk.double.rate = log(2)/proj$slope[proj$country=="South Korea"]
+sk.double.rate.print = round(sk.double.rate)
+
+```
+
+
+
+![](../figs/cases_current_nocaption.png)
+
+On Wednesday, the WHO declared COVID-19, the disease caused by the novel coronavirus, to be a global pandemic. The U.S. banned travel from Europe, the NBA suspended its season, and cities across the country implemented bans on large public gathers. Will these efforts to curb the spread of the coronavirus be successful? How will we know?
+
+To answer this question, we need to know how many cases of COVID-19 we should expect given current trends. Unfortunately, I haven't seen many readily accessible forecasts that are updated in real time as new data comes in. I realize that things can escalate quickly, but I didn't have much sense of how soon to expect that to happen. So I set out to produce some short-term projections myself to help calibrate my beliefs (and maybe quell some uncertainty-induced anxiety at the same time).
+
+<!-- Epidemiologists have [sophisticated disease transmission models](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology) that could be used for forecasting. But the freshest research -->
+
+<!-- I've seen of them (which admittedly is based on a small, non-random sampling of recent medRxiv papers) seems primarily interested in using those models to estimate parameters about the virus itself --- like the case-fatality rate or the basic reproductive number $R_0$. -->
+
+<!-- While I've seen news articles reference various projections, I haven't seen any models that update in real time. So I decided to produce one myself, to get a sense of what to expect over the next week or so.  -->
+
+The result is shown in the above figure. It displays the cumulative number of cases in red along with the estimated model used to make forecasts in blue. The solid blue line shows how well the model predicts past data, while the dotted blue line shows projections over the next 7 days. Note that the vertical axis is on the logarithmic scale. 
+
+Before discussing the findings, a caveat: I am not an epidemiologist, and I have no special expertise with disease modeling. I simply fit some time series models to publicly available data on the number of confirmed cases each day. If my forecast is wildly different than that of a "real" epidemiology model, it's probably because my forecast is wrong. With that out of the way...
+
+<!-- The country labels also list the estimated doubling time --- i.e., the number of days it takes for the number of cases doubles --- and the projected number of cases on `r month.name[month(fc.date)]` `r day(fc.date)` (a week from this writing). Across all countries, the average doubling time is `r round(log(2)/slope.mean, 1)` days, though it varies significantly by country. -->
+
+My forecast suggests that there will be rapid spread of COVID-19 in the next week. Currently, [Johns Hopkins CSSE](https://github.com/CSSEGISandData) reports that there are `r us.current.print` cases in the United States. If the recent trend continues, the model projects that in 7 days, there will be over `r proj.us.print` cases in the United States. The number of cases in the U.S. is poised to double roughly roughly every `r us.double.rate.print` days. For reference, there has been a nearly [10-fold increase in confirmed cases](https://www.cnbc.com/2020/03/11/us-coronavirus-cases-surpass-1000-johns-hopkins-university-data-shows.html) over the past week --- a doubling roughly every 1.4 days (compared to my model-based estimate for the next week of `r round(us.double.rate,1)`). 
+
+The average doubling time worldwide is slower, at `r round(log(2)/slope.mean, 1)` days. But there are significant differences is growth rate in different countries. In other countries that are struggling to contain COVID-19 --- including Italy, Iran, Germany, and Spain --- the disease is spreading nearly as fast as in the U.S. Meanwhile, the model estimates that several countries whose outbreaks started sooner have significantly slowed the spread. In China --- the epicenter of the pandemic --- the estimated doubling time is about `r china.double.rate.print` days. In South Korea, where there has been a large-scale response, the estimate is about `r sk.double.rate.print` days. 
+
+These projections give a general sense of what we may be looking at if the current trend continues. But they shouldn't be taken to be too precise. Most importantly, the public health interventions that are being rolled out --- canceling large events, social distancing, etc. --- should help to slow the growth of the disease. As the public mobilizes to slow the spread of COVID-19, the doubling time will likely decline, hopefully making my projection an overestimate in the process. Second, there are various unmodeled factors and inherent randomness that may cause real outcomes to differ from the forecast.^[[More serious epidemiological](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology) models might generate better predictions. Unfortunately, I have not found a recent paper (i.e., within the past week or two) that uses disease models to forecast a timeline for the U.S. Instead, most of what I've seen has been focusing on estimating parameters about the disease, like the case-fatality rate and the basic reproductive number $R_0$. One exception is [Peng et al. 2020](https://arxiv.org/abs/2002.06563), who use a SEIR model both to estimate key disease parameters but also to predict the timing of the outbreak in China. And while I was tempted to try to estimate one of these serious myself, that's probably more of a "take-an-epidemiology-class"-level undertaking than a "kill-a-few-hours"-level undertaking.] I estimate that the model's 7-day-ahead predictions are likely to be off by around 50-75% on average across countries. 
+
+Those caveats aside, the table below shows the projections for every country that has reported at least 10 cases as of this writing. It also includes the current number of confirmed cases as well as the estimated doubling time. The rest of the blog post describes the methods used to produce these estimates. 
+
+
+```{r, echo=FALSE}
+printproj = filter(proj, current_cases >= 10)
+printproj = printproj %>% select(country, doubling_time,current_cases, forecast_7_day)
+printproj$forecast_7_day = prettyNum(round(printproj$forecast_7_day, -2), big.mark = ",")
+printproj$current_cases = prettyNum(round(printproj$current_cases), big.mark = ",")
+printproj$doubling_time = paste(round(printproj$doubling_time, 1), "days")
+  
+cn = c("Country",
+       "Estimated Doubling Time",
+       paste("# Cases,", month.name[month(today)], day(today)),
+       paste("Projected # Cases,", month.name[month(fc.date)], day(fc.date)))
+kable(printproj, col.names = cn) %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width=FALSE)) %>% 
+    scroll_box(width = "100%", height = "500px")
+```
+
+
+### Methodology
+
+I'll now describe the methodology to arrive at the projections above. I use data on the number of confirmed cases in each country, curated by [Johns Hopkins CSSE](https://github.com/CSSEGISandData). Each observation lists the number of confirmed cases for a given country on a given date. I model the data using a simple exponential growth model, where the growth rate is allowed to vary by country. In estimating the model parameters, I up-weight more recent observations, by an amount that is tuned to provide good short-term (7-day-ahead) forecasts. I estimate the model via weighted maximum likelihood using the `R` package `lme4`. 
+
+
+#### The Basic Model
+
+Formally, let $N_i(t)$ denote the number of cases in country $i$ at time $t$, where $t$ measures the number of days since the first reported cases. I estimate an exponential growth model of the form $N_i(t) = N_i(0) \exp(\beta t)$, which can equivalently be written $$\log N_i(t) = \alpha_i + \beta t,$$ where  $\alpha_i \equiv \log N_i(0)$. 
+
+A feature of the exponential growth model is that the doubling time is constant. We can easily derive it by finding $k$ such that $N(t+k)/N(t) = 2$. With a little algebra, this yields $k = \log(2)/\beta$. We can simply plug in our estimated $\hat{\beta}$ to get a doubling time estimate $\hat{k}$.
+
+The growth rate $\beta$ is likely to vary slightly across countries, depending on the country's public health response, the country's population density, and so on. At the same time, the growth rate in one country is informative about what the growth rate in other countries will be. Therefore, I estimate a random-slopes version of the model above that allows for "partial pooling" across countries. More specifically, I allow $\beta$ to be indexed by country $i$, and model $\beta_i$ as being drawn from a normal distribution with mean $\mu_\beta$ and variance $\sigma^2_\beta$ (which are estimated from the data). Because the initial number of cases $N_i(0)$ may vary by country (depending, for example, on when tests were first administered), I also allow  $\alpha_i$ to vary by country.
+
+#### Optimizing the Estimates for Short-Term Projections
+
+My goal is to generate reasonable projections for the number of confirmed cases we are likely to experience in the short term. Due to changing containment measures and other factors, the value of $\beta_i$ may change over time. More recent data points are therefore more informative for forecasting than data points further in the past. To account for this feature, I weight the observations $k$ days ago by a factor of $\delta^k$, with $\delta \in [0, 1]$. For example, data from today get weight $1$, data points from yesterday get weight $\delta$, data points from two days ago get weight $\delta^2$, and so on. 
+
+How should we pick $\delta$? I treat this as a parameter that we can tune by seeing how different values of $\delta$ would have performed in the past. I simulate how each potential $\delta$ would have performed if we were estimating the current number of cases using data up to a week ago. So, since I'm updating this notebook on `r month.name[month(today)]` `r day(today)`, I'll make projections for the number of cumulative cases reported in each country today only using training data that would have been available on `r month.name[month(today-7)]` `r day(today-7)`, then compare the prediction to what actually happened.
+
+Formally, denote the predictions generated using a given $\delta$ by $\hat{y}_i(\delta)$ and the values that actually occurred by $y_i$. (I should note that even though the model is estimated in log-linear form, in this section $y_i$ is in levels, not logs.) Because the scale of the data across countries varies so widely, I normalize the error by the true value, so the error is expressed as a percent of the truth. The error statistic is thus $\epsilon_i(\delta) \equiv 100 \times (\hat{y}_i(\delta) - y_i)/y_i$. I compute both root mean squared prediction error (RMSPE) and mean absolute prediction error (MAPE) for the hold out sample $i = 1, \dots, n$: 
+$$
+\begin{aligned}
+  \text{RMSPE}(\delta) &= \sqrt{\frac{1}{n} \sum_{i=1}^n (\epsilon_i(\delta))^2} \\
+  \text{MAPE}(\delta) &= \sqrt{\frac{1}{n} \sum_{i=1}^n \left| \epsilon_i(\delta) \right|} \\
+\end{aligned}
+$$
+
+I re-estimate the model for various choices of $\delta$, then compute the error statistics for each choice. I then choose  $\delta^{opt}$ that produces projections with the lowest error.  The error as a function of $\delta$ is shown in the next figure. Thankfully, the hold-out statistics (RMSPE and MAPE) generate nearly identical choices for $\delta^{opt}$, namely `r delta.opt.rmse` and `r delta.opt.mae`, respectively. With $\delta^{opt}$ in hand, I then re-fit the model using the full data set, and then make 7-days-ahead projections for each country.
+
+```{r, out.width = "600px", echo = FALSE}
+knitr::include_graphics("../figs/decay_rate_current.png")
+```
+
+Interestingly, the optimal decay rate is relatively small, meaning that data points become less informative very quickly. A value of $\delta^{opt} = `r delta.opt.rmse`$ implies that data from `r round(log(.01) /log(delta.opt.rmse))` days ago is about 1% as data from today. (One potential reason for this is that the growth curve is very erratic when the total number of cases is low. An extension might allow $\delta^{opt}$ to vary by country, according to the number of days since the first reported case.)
+
+#### Model Fit
+
+As seen in the figure at the top, the model fits the recent data (in-sample) quite well. However, from the error estimation detailed in the previous section, we can see that the typical prediction is off by around 45-55%. While the estimates are likely to be in the right ballpark, they are not rock-solid predictions.
+
+This exercise uses the number of <i>confirmed cases</i>. The testing criteria are still relatively stringent, and it is likely that there are many undetected cases. This would suggest the estimates here are likely to <i>underestimate</i> the actual number of cases in the population. On the other hand, since testing has ramped up in recent weeks, it may be that the growth in confirmed cases is outpacing the growth in total cases. Since recent data is weighted more heavily, this effect would tend to overstate the growth rate --- potentially generating an <i>overestimate</i>. Without more data, it's hard to adjudicate which source of bias is likely to be more important. 
+
+
+#### Heterogeneity in Growth Rates
+
+Finally, we can look at the estimated growth rates $\hat{\beta}_i$ for each country. The last figure shows the $\hat{\beta}_i$ estimates, with countries arranged in increasing number of total cases. There is not an obvious correlation between the number of confirmed cases and the current growth rate, except that countries with very few reported cases generally have a lower growth rate.
+
+```{r, fig.height=8, fig.width=6, fig.pos="center",echo=FALSE,cache=TRUE}
+proj = proj %>% 
+  mutate(severity = case_when(
+    current_cases < 10 ~ "< 10",
+    current_cases < 100 ~ "10-100",
+    current_cases < 1000 ~ "100-1k",
+    current_cases < 10000 ~ "1k-10k",
+    current_cases < 100000 ~ "10k-100k",
+    current_cases >= 100000 ~ "> 100k"
+  )) 
+proj$severity = factor(proj$severity, rev(unique(proj$severity)))
+
+ggplot(proj) + 
+  aes(x = slope, y = country, colour = severity) + 
+  geom_vline(xintercept = slope.mean, lty = 3) + 
+  geom_point() + 
+  scale_x_continuous(breaks = seq(0, .5, .1)) +
+  scale_color_brewer(name = "Number of Cases", palette = "Reds") + 
+  theme_minimal() + 
+  labs(x = expression(paste("Estimated Growth Rate, ", hat(beta)[i])), y = NULL)
+
+```
+
+
+
