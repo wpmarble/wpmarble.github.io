@@ -50,11 +50,10 @@ sk.double.rate.print = round(sk.double.rate)
 
 
 
-![](../figs/cases_current_nocaption.png)
 
 On Wednesday, the WHO declared COVID-19, the disease caused by the novel coronavirus, to be a global pandemic. The U.S. banned travel from Europe, the NBA suspended its season, and cities across the country implemented bans on large public gathers. Will these efforts to curb the spread of the coronavirus be successful? How will we know?
 
-To answer this question, we need to know how many cases of COVID-19 we should expect given current trends. Unfortunately, I haven't seen many readily accessible forecasts that are updated in real time as new data comes in. I realize that things can escalate quickly, but I didn't have much sense of how soon to expect that to happen. So I set out to produce some short-term projections myself to help calibrate my beliefs (and maybe quell some uncertainty-induced anxiety at the same time).
+To answer this question, we need to know how many cases of COVID-19 we should expect given current trends. Unfortunately, I haven't seen many readily accessible forecasts that are updated in real time as new data comes in. I realize that things can escalate quickly, but I didn't have much sense of how soon to expect that to happen. So I set out to produce some short-term projections myself to help calibrate my expectations (and maybe quell some uncertainty-induced anxiety at the same time).
 
 <!-- Epidemiologists have [sophisticated disease transmission models](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology) that could be used for forecasting. But the freshest research -->
 
@@ -62,11 +61,14 @@ To answer this question, we need to know how many cases of COVID-19 we should ex
 
 <!-- While I've seen news articles reference various projections, I haven't seen any models that update in real time. So I decided to produce one myself, to get a sense of what to expect over the next week or so.  -->
 
-The result is shown in the above figure. It displays the cumulative number of cases in red along with the estimated model used to make forecasts in blue. The solid blue line shows how well the model predicts past data, while the dotted blue line shows projections over the next 7 days. Note that the vertical axis is on the logarithmic scale. 
+The result is shown in the figure below. It displays the cumulative number of cases in red along with the estimated model used to make forecasts in blue. The solid blue line shows how well the model predicts past data, while the dotted blue line shows projections over the next 7 days. Note that the vertical axis is on the logarithmic scale. 
+
+
+![](../figs/cases_current_nocaption.png)
 
 Before discussing the findings, a caveat: I am not an epidemiologist, and I have no special expertise with disease modeling. I simply fit some time series models to publicly available data on the number of confirmed cases each day. If my forecast is wildly different than that of a "real" epidemiology model, it's probably because my forecast is wrong. With that out of the way...
 
-<!-- The country labels also list the estimated doubling time --- i.e., the number of days it takes for the number of cases doubles --- and the projected number of cases on `r month.name[month(fc.date)]` `r day(fc.date)` (a week from this writing). Across all countries, the average doubling time is `r round(log(2)/slope.mean, 1)` days, though it varies significantly by country. -->
+ 
 
 My forecast suggests that there will be rapid spread of COVID-19 in the next week. Currently, [Johns Hopkins CSSE](https://github.com/CSSEGISandData) reports that there are `r us.current.print` cases in the United States. If the recent trend continues, the model projects that in 7 days, there will be over `r proj.us.print` cases in the United States. The number of cases in the U.S. is poised to double roughly roughly every `r us.double.rate.print` days. For reference, there has been a nearly [10-fold increase in confirmed cases](https://www.cnbc.com/2020/03/11/us-coronavirus-cases-surpass-1000-johns-hopkins-university-data-shows.html) over the past week --- a doubling roughly every 1.4 days (compared to my model-based estimate for the next week of `r round(us.double.rate,1)`). 
 
