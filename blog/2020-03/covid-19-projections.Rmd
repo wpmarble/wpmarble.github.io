@@ -119,7 +119,7 @@ Formally, denote the predictions generated using a given $\delta$ by $\hat{y}_i(
 $$
 \begin{aligned}
   \text{RMSPE}(\delta) &= \sqrt{\frac{1}{n} \sum_{i=1}^n (\epsilon_i(\delta))^2} \\
-  \text{MAPE}(\delta) &= \sqrt{\frac{1}{n} \sum_{i=1}^n \left| \epsilon_i(\delta) \right|} \\
+  \text{MAPE}(\delta) &= {\frac{1}{n} \sum_{i=1}^n \left| \epsilon_i(\delta) \right|} \\
 \end{aligned}
 $$
 
