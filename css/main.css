@@ -23,11 +23,11 @@ li {
 }
 a {
     text-decoration: none;
-    color: #696969;
+    color: #00008B;
 }
 a:hover {
     text-decoration: underline;
-    color: #696969;
+    color: #00008B;
 }
 h1 {
     font-size: 3em;
