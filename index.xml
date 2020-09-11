@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>William Marble | Political Science</title>
-    <link>/</link>
+    <link>https://williammarble.co/</link>
     <description>Recent content on William Marble | Political Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://williammarble.co/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/archives/</link>
+      <link>https://williammarble.co/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/archives/</guid>
+      <guid>https://williammarble.co/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://williammarble.co/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://williammarble.co/about/</guid>
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/cv/</link>
+      <link>https://williammarble.co/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/cv/</guid>
+      <guid>https://williammarble.co/cv/</guid>
       <description>Curriculum Vitae Click here for a link to my CV. Last updated August 2020.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/research/</link>
+      <link>https://williammarble.co/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/research/</guid>
+      <guid>https://williammarble.co/research/</guid>
       <description>Forthcoming and Accepted Papers William Marble and Clayton Nall. &amp;ldquo;Where Self-Interest Trumps Ideology: Liberal Homeowners and Local Opposition to Housing Development.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/teaching/</link>
+      <link>https://williammarble.co/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/teaching/</guid>
+      <guid>https://williammarble.co/teaching/</guid>
       <description>Teaching Assistant I have served as a teaching assistant for a number of classes at Stanford, including two years as a TA for the quantitative methods sequence for political science Ph.</description>
     </item>
     
