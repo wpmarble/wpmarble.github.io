@@ -3,46 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://williammarble.co/archives/</loc>
+    <loc>/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://williammarble.co/about-site/</loc>
+    <loc>/about-site/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://williammarble.co/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>https://williammarble.co/cv/</loc>
+    <loc>/cv/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://williammarble.co/research/</loc>
+    <loc>/research/</loc>
   </url>
   
   <url>
-    <loc>https://williammarble.co/teaching/</loc>
+    <loc>/teaching/</loc>
   </url>
   
   <url>
-    <loc>https://williammarble.co/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://williammarble.co/tags/index/</loc>
+    <loc>/tags/index/</loc>
   </url>
   
   <url>
-    <loc>https://williammarble.co/post/</loc>
+    <loc>/post/</loc>
   </url>
   
   <url>
-    <loc>https://williammarble.co/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
