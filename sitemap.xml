@@ -1,48 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://williammarble.co/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/about-site/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/cv/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/research/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/teaching/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/tags/index/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/post/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://williammarble.co/tags/</loc>
   </url>
-  
 </urlset>

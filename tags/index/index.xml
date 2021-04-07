@@ -5,11 +5,7 @@
     <link>https://williammarble.co/tags/index/</link>
     <description>Recent content in index on William Marble | Political Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://williammarble.co/tags/index/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://williammarble.co/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
       <link>https://williammarble.co/post/</link>
