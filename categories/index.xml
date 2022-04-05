@@ -5,6 +5,43 @@
     <link>https://williammarble.co/categories/</link>
     <description>Recent content in Categories on William Marble | Political Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://williammarble.co/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://williammarble.co/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>artificial-intelligence</title>
+      <link>https://williammarble.co/categories/artificial-intelligence/</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://williammarble.co/categories/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep-learning</title>
+      <link>https://williammarble.co/categories/deep-learning/</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://williammarble.co/categories/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research-methods</title>
+      <link>https://williammarble.co/categories/research-methods/</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://williammarble.co/categories/research-methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>covid</title>
+      <link>https://williammarble.co/categories/covid/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://williammarble.co/categories/covid/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

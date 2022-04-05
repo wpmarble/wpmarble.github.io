@@ -1,0 +1,23 @@
+/* custom additions */
+
+/* this sets the width of the text on the homepage */
+div.homepage-content {
+  max-width: 90%;
+  margin: auto;
+}
+
+
+/* this adds some spacing between list items */
+li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+/* fixes some spacing */
+
+.post .post-content a {
+  text-decoration: none;
+  letter-spacing: 0px;
+  color: #2660ab;
+}
+

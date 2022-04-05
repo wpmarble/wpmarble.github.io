@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>covid on William Marble | Political Science</title>
+    <link>https://williammarble.co/categories/covid/</link>
+    <description>Recent content in covid on William Marble | Political Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://williammarble.co/categories/covid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Short-Term COVID-19 Projections</title>
+      <link>https://williammarble.co/posts/2020-03-11-covid-projections/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://williammarble.co/posts/2020-03-11-covid-projections/</guid>
+      <description>On Wednesday, the WHO declared COVID-19, the disease caused by the novel coronavirus, to be a global pandemic.</description>
+    </item>
+    
+  </channel>
+</rss>
