@@ -1,0 +1,103 @@
+/* custom additions */
+
+/* this sets the width of the text on the homepage */
+div.homepage-content {
+  max-width: 90%;
+  margin: auto;
+}
+
+
+/* this adds some spacing between list items */
+li:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+
+/* top bar */
+/*.page-top {
+  width: 66%;
+  position: fixed;
+  right: 0;
+  z-index: 3;
+  background-color: var(--bg-color);
+  height: 64px;
+  border-bottom: 1px solid var(--border-color);
+}*/
+
+.page-top {
+  width: 66%;
+  position: fixed;
+  right:  15px;
+  z-index: 3;
+  background-color: var(--bg-color);
+  height: 64px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-top .nav {
+  list-style: none;
+  padding: 11px 30px;
+  float: center;
+  font-size: 14px;
+  display: block;
+  width: calc(100% - 30px);
+}
+
+
+/* fixes some spacing */
+
+.post .post-content a {
+  text-decoration: none;
+  letter-spacing: 0px;
+  color: #2660ab;
+}
+
+.post .post-content p {
+  font-family: "Monolith";
+  font-size: 15px;
+}
+
+/* Title of blog posts */
+.post .post-title h3 {
+  text-transform: none;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-weight: 600;
+  /* color: #464646; */
+  color: var(--heading-color);
+  font-size: 28px;
+  margin: 0;
+}
+
+
+/* Main posts page */
+.list-with-title .listing .listing-post .post-summary {
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.list-with-title .post-more {
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+
+/* Paper abstracts */
+.abstract {
+  margin-left: 2rem;
+}
+
+.abstract p {
+  margin-top: .5rem;
+  line-height: normal;
+}
+
+.abstract ul {
+  line-height: normal;
+}
+
+.abstract li {
+  line-height: normal;
+}
+
+
