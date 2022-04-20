@@ -54,26 +54,6 @@ Some standard-issue info about Hugo is below.
     </item>
     
     <item>
-      <title></title>
-      <link>https://williammarble.co/research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://williammarble.co/research/</guid>
-      <description>Published Papers Ala&#39; Alrababa&amp;rsquo;h, William Marble, Salma Mousa, and Alexandra Siegel. 2021. Can Exposure to Celebrities Reduce Prejudice? The Effect of Mohamed Salah on Islamophobic Behaviors and Attitudes. American Political Science Review. Publisher version, preprint, replication archive.
-Abstract   Can exposure to successful celebrities from a stigmatized group reduce prejudice toward that group writ large? We study the sudden and phenomenal rise to fame of Liverpool F.C. soccer star Mohamed Salah, a visibly Muslim player. We estimate the causal effect of Salah joining Liverpool F.C. on Islamophobia using hate crime reports throughout England, 15 million tweets from British soccer fans, and a survey experiment of Liverpool fans.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://williammarble.co/teaching/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://williammarble.co/teaching/</guid>
-      <description>I served as a teaching assistant for both graduate and undergraduate classes at Stanford, including two years as a TA for the quantitative methods sequence for political science Ph.D. students. For this work, I received the Centennial Teaching Assistant Award recognizing outstanding TAs. I have also taught undergraduate courses in game theory and American political institutions. I&amp;rsquo;m happy to share teaching materials upon request.
- Graduate Political Methodology I: Regression (2016, 2017) Graduate Political Methodology II: Causal Inference (2017, 2018) Math Camp for Incoming Political Science Ph.D. Students (2016, 2017) What&amp;rsquo;s Wrong with American Government? An Institutional Approach (2019, 2020) Thinking Strategically: Undergraduate Introduction to Game Theory (2017)  Computing Tutorials Webscraping with R</description>
-    </item>
-    
-    <item>
       <title>Curriculum Vitae</title>
       <link>https://williammarble.co/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -82,6 +62,26 @@ Abstract   Can exposure to successful celebrities from a stigmatized group reduc
       <description>Last updated March 2022.
 This browser does not support PDFs. Please download the PDF to view it: Download PDF.
  </description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://williammarble.co/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://williammarble.co/research/</guid>
+      <description>Ala&#39; Alrababa&amp;rsquo;h, William Marble, Salma Mousa, and Alexandra Siegel. 2021. Can Exposure to Celebrities Reduce Prejudice? The Effect of Mohamed Salah on Islamophobic Behaviors and Attitudes. American Political Science Review. Publisher version, preprint, replication archive.
+Abstract   Can exposure to successful celebrities from a stigmatized group reduce prejudice toward that group writ large? We study the sudden and phenomenal rise to fame of Liverpool F.C. soccer star Mohamed Salah, a visibly Muslim player. We estimate the causal effect of Salah joining Liverpool F.C. on Islamophobia using hate crime reports throughout England, 15 million tweets from British soccer fans, and a survey experiment of Liverpool fans.</description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://williammarble.co/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://williammarble.co/teaching/</guid>
+      <description>I served as a teaching assistant for both graduate and undergraduate classes at Stanford, including two years as a TA for the quantitative methods sequence for political science Ph.D. students. For this work, I received the Centennial Teaching Assistant Award recognizing outstanding TAs. I have also taught undergraduate courses in game theory and American political institutions. I&amp;rsquo;m happy to share teaching materials upon request.
+ Graduate Political Methodology I: Regression (2016, 2017) Graduate Political Methodology II: Causal Inference (2017, 2018) Math Camp for Incoming Political Science Ph.D. Students (2016, 2017) What&amp;rsquo;s Wrong with American Government? An Institutional Approach (2019, 2020) Thinking Strategically: Undergraduate Introduction to Game Theory (2017)  Computing Tutorials Webscraping with R</description>
     </item>
     
   </channel>
