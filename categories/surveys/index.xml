@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>surveys on William Marble | Political Science</title>
+    <link>https://williammarble.co/categories/surveys/</link>
+    <description>Recent content in surveys on William Marble | Political Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://williammarble.co/categories/surveys/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Survey Estimates and Ecological Inference</title>
+      <link>https://williammarble.co/posts/2022-08-07-survey-calibration/</link>
+      <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://williammarble.co/posts/2022-08-07-survey-calibration/</guid>
+      <description>On Twitter this weekend there was some discussion among journalists and industry data analyst about the extent to which Latinos swung toward Trump in the 2020 election (relative to 2016 and prior elections). My paper with Justin Grimmer and Cole Tanigawa-Lau claims that this shift is overstated. In the preprint, we write:
+ In sum, we find that racial minorities continue to be a solid Democratic constituency in presidential elections. Recent punditry has noted some decline in the vote share for Democrats among Black and Hispanic voters who turn out to vote. But changes in com- position and turnout rates more than compensate for these changes in vote share.</description>
+    </item>
+    
+  </channel>
+</rss>
