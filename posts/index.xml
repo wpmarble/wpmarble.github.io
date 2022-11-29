@@ -13,11 +13,13 @@
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://williammarble.co/posts/2022-04-05-deep-learning-knowledge-representation/</guid>
-      <description>&lt;p&gt;In &amp;ldquo;&lt;a href=&#34;https://nautil.us/deep-learning-is-hitting-a-wall-14467/&#34;&gt;Deep Learning is Hitting A Wall&lt;/a&gt;,&amp;rdquo; Gary Marcus argues that deep learning is reaching its limits as a paradigm for artificial intelligence. Recent difficulties with self-driving cars and unreliable language model outputs illustrate the limitations of systems that cannot &lt;em&gt;understand&lt;/em&gt; the world, or the meaning of the words they are &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3442188.3445922&#34;&gt;parroting&lt;/a&gt;. Instead, Marcus advocates that field of AI turn its attention to symbolic approaches. Such approaches would focus on encoding information about the world and deriving information using simple operations:&lt;/p&gt;
+      
+        <description>&lt;p&gt;In &amp;ldquo;&lt;a href=&#34;https://nautil.us/deep-learning-is-hitting-a-wall-14467/&#34;&gt;Deep Learning is Hitting A Wall&lt;/a&gt;,&amp;rdquo; Gary Marcus argues that deep learning is reaching its limits as a paradigm for artificial intelligence. Recent difficulties with self-driving cars and unreliable language model outputs illustrate the limitations of systems that cannot &lt;em&gt;understand&lt;/em&gt; the world, or the meaning of the words they are &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3442188.3445922&#34;&gt;parroting&lt;/a&gt;. Instead, Marcus advocates that field of AI turn its attention to symbolic approaches. Such approaches would focus on encoding information about the world and deriving information using simple operations:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;What does &amp;ldquo;manipulating symbols&amp;rdquo; really mean? Ultimately, it means two things: having sets of symbols (essentially just patterns that stand for things) to represent information, and processing (manipulating) those symbols in a specific way, using something like algebra (or logic, or computer programs) to operate over those symbols.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This article is as interesting for its exposition of symbolic approaches (relatively unknown to me) as for its sociology of science. Embraced by early computer scientists such as von Nuemann, symbolic approaches became dominant in the 1970s after intradisciplinary fighting between the symbolic camp and the neural network camp. Neural nets regained prominance in the 1980s, advanced by researchers who avoided the symbolic approach. The schism remains until today: Marcus&amp;rsquo;s polemic is itself is a testament to the rift. These are competing paradigms, though there are glimmers of a synthesis on the horizon.&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -26,11 +28,13 @@
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://williammarble.co/posts/2020-03-11-covid-projections/</guid>
-      <description>&lt;script type=&#34;text/javascript&#34;
+      
+        <description>&lt;script type=&#34;text/javascript&#34;
   src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
 &lt;/script&gt;
 &lt;p&gt;On Wednesday, the WHO declared COVID-19, the disease caused by the novel coronavirus, to be a global pandemic. The U.S. banned travel from Europe, the NBA suspended its season, and cities across the country implemented bans on large public gathers. Will these efforts to curb the spread of the coronavirus be successful? How will we know?&lt;/p&gt;
 &lt;p&gt;To answer this question, we need to know how many cases of COVID-19 we should expect given current trends. Unfortunately, I haven&amp;rsquo;t seen many readily accessible forecasts that are updated in real time as new data comes in. I realize that things can escalate quickly, but I didn&amp;rsquo;t have much sense of how soon to expect that to happen. So I set out to produce some short-term projections myself to help calibrate my expectations (and maybe quell some uncertainty-induced anxiety at the same time).&lt;/p&gt;</description>
+      
     </item>
     
   </channel>

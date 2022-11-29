@@ -13,11 +13,13 @@
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://williammarble.co/posts/2020-03-11-covid-projections/</guid>
-      <description>&lt;script type=&#34;text/javascript&#34;
+      
+        <description>&lt;script type=&#34;text/javascript&#34;
   src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
 &lt;/script&gt;
 &lt;p&gt;On Wednesday, the WHO declared COVID-19, the disease caused by the novel coronavirus, to be a global pandemic. The U.S. banned travel from Europe, the NBA suspended its season, and cities across the country implemented bans on large public gathers. Will these efforts to curb the spread of the coronavirus be successful? How will we know?&lt;/p&gt;
 &lt;p&gt;To answer this question, we need to know how many cases of COVID-19 we should expect given current trends. Unfortunately, I haven&amp;rsquo;t seen many readily accessible forecasts that are updated in real time as new data comes in. I realize that things can escalate quickly, but I didn&amp;rsquo;t have much sense of how soon to expect that to happen. So I set out to produce some short-term projections myself to help calibrate my expectations (and maybe quell some uncertainty-induced anxiety at the same time).&lt;/p&gt;</description>
+      
     </item>
     
   </channel>
