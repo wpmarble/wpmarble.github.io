@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on William Marble | Political Science</title>
-    <link>https://williammarble.co/tags/</link>
+    <link>http://localhost:7832/tags/</link>
     <description>Recent content in Tags on William Marble | Political Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://williammarble.co/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:7832/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>artificial-intelligence</title>
-      <link>https://williammarble.co/tags/artificial-intelligence/</link>
+      <title>Artificial-Intelligence</title>
+      <link>http://localhost:7832/tags/artificial-intelligence/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://williammarble.co/tags/artificial-intelligence/</guid>
+      <guid>http://localhost:7832/tags/artificial-intelligence/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>deep-learning</title>
-      <link>https://williammarble.co/tags/deep-learning/</link>
+      <title>Deep-Learning</title>
+      <link>http://localhost:7832/tags/deep-learning/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://williammarble.co/tags/deep-learning/</guid>
+      <guid>http://localhost:7832/tags/deep-learning/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>research-methods</title>
-      <link>https://williammarble.co/tags/research-methods/</link>
+      <title>Index</title>
+      <link>http://localhost:7832/tags/index/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://williammarble.co/tags/research-methods/</guid>
+      <guid>http://localhost:7832/tags/index/</guid>
       
         <description></description>
       
     </item>
     
     <item>
-      <title>covid</title>
-      <link>https://williammarble.co/tags/covid/</link>
+      <title>Research-Methods</title>
+      <link>http://localhost:7832/tags/research-methods/</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:7832/tags/research-methods/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Covid</title>
+      <link>http://localhost:7832/tags/covid/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://williammarble.co/tags/covid/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>index</title>
-      <link>https://williammarble.co/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://williammarble.co/tags/index/</guid>
+      <guid>http://localhost:7832/tags/covid/</guid>
       
         <description></description>
       

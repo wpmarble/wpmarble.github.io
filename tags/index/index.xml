@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>index on William Marble | Political Science</title>
-    <link>https://williammarble.co/tags/index/</link>
-    <description>Recent content in index on William Marble | Political Science</description>
+    <title>Index on William Marble | Political Science</title>
+    <link>http://localhost:7832/tags/index/</link>
+    <description>Recent content in Index on William Marble | Political Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://williammarble.co/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:7832/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
-      <link>https://williammarble.co/posts/</link>
+      <link>http://localhost:7832/posts/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://williammarble.co/posts/</guid>
+      <guid>http://localhost:7832/posts/</guid>
       
         <description></description>
       
