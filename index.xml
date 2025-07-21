@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>William Marble | Political Science</title>
-    <link>http://localhost:4321/</link>
+    <link>https://williammarble.co/</link>
     <description>Recent content on William Marble | Political Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://williammarble.co/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deep Learning and Knowledge Representation</title>
-      <link>http://localhost:4321/posts/2022-04-05-deep-learning-knowledge-representation/</link>
+      <link>https://williammarble.co/posts/2022-04-05-deep-learning-knowledge-representation/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/posts/2022-04-05-deep-learning-knowledge-representation/</guid>
+      <guid>https://williammarble.co/posts/2022-04-05-deep-learning-knowledge-representation/</guid>
       
         <description>&lt;p&gt;In &amp;ldquo;&lt;a href=&#34;https://nautil.us/deep-learning-is-hitting-a-wall-14467/&#34;&gt;Deep Learning is Hitting A Wall&lt;/a&gt;,&amp;rdquo; Gary Marcus argues that deep learning is reaching its limits as a paradigm for artificial intelligence. Recent difficulties with self-driving cars and unreliable language model outputs illustrate the limitations of systems that cannot &lt;em&gt;understand&lt;/em&gt; the world, or the meaning of the words they are &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3442188.3445922&#34;&gt;parroting&lt;/a&gt;. Instead, Marcus advocates that field of AI turn its attention to symbolic approaches. Such approaches would focus on encoding information about the world and deriving information using simple operations:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>Short-Term COVID-19 Projections</title>
-      <link>http://localhost:4321/posts/2020-03-11-covid-projections/</link>
+      <link>https://williammarble.co/posts/2020-03-11-covid-projections/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/posts/2020-03-11-covid-projections/</guid>
+      <guid>https://williammarble.co/posts/2020-03-11-covid-projections/</guid>
       
         <description>&lt;script type=&#34;text/javascript&#34;
   src=&#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title></title>
-      <link>http://localhost:4321/archives/</link>
+      <link>https://williammarble.co/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/archives/</guid>
+      <guid>https://williammarble.co/archives/</guid>
       
         <description></description>
       
@@ -50,10 +50,10 @@
     
     <item>
       <title>About This Site</title>
-      <link>http://localhost:4321/about-site/</link>
+      <link>https://williammarble.co/about-site/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/about-site/</guid>
+      <guid>https://williammarble.co/about-site/</guid>
       
         <description>Hugo, the world’s fastest framework for building websites</description>
       
@@ -61,10 +61,10 @@
     
     <item>
       <title></title>
-      <link>http://localhost:4321/teaching/</link>
+      <link>https://williammarble.co/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/teaching/</guid>
+      <guid>https://williammarble.co/teaching/</guid>
       
         <description>Teaching</description>
       
@@ -72,10 +72,10 @@
     
     <item>
       <title>Curriculum Vitae</title>
-      <link>http://localhost:4321/cv/</link>
+      <link>https://williammarble.co/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/cv/</guid>
+      <guid>https://williammarble.co/cv/</guid>
       
         <description>&lt;!-- # Curriculum Vitae --&gt;
 &lt;p&gt;&lt;a href=&#34;../docs/MarbleCV.pdf&#34;&gt;Click here&lt;/a&gt; to open in a new tab.&lt;/p&gt;
@@ -89,10 +89,10 @@
     
     <item>
       <title>Research</title>
-      <link>http://localhost:4321/research/</link>
+      <link>https://williammarble.co/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/research/</guid>
+      <guid>https://williammarble.co/research/</guid>
       
         <description>List of papers by William Marble</description>
       

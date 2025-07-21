@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4321/</loc>
+    <loc>https://williammarble.co/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/artificial-intelligence/</loc>
+    <loc>https://williammarble.co/tags/artificial-intelligence/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/artificial-intelligence/</loc>
+    <loc>https://williammarble.co/categories/artificial-intelligence/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/</loc>
+    <loc>https://williammarble.co/categories/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/posts/2022-04-05-deep-learning-knowledge-representation/</loc>
+    <loc>https://williammarble.co/posts/2022-04-05-deep-learning-knowledge-representation/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/deep-learning/</loc>
+    <loc>https://williammarble.co/tags/deep-learning/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/deep-learning/</loc>
+    <loc>https://williammarble.co/categories/deep-learning/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/index/</loc>
+    <loc>https://williammarble.co/tags/index/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/posts/</loc>
+    <loc>https://williammarble.co/posts/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/research-methods/</loc>
+    <loc>https://williammarble.co/tags/research-methods/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/research-methods/</loc>
+    <loc>https://williammarble.co/categories/research-methods/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/</loc>
+    <loc>https://williammarble.co/tags/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/covid/</loc>
+    <loc>https://williammarble.co/tags/covid/</loc>
     <lastmod>2020-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/covid/</loc>
+    <loc>https://williammarble.co/categories/covid/</loc>
     <lastmod>2020-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/posts/2020-03-11-covid-projections/</loc>
+    <loc>https://williammarble.co/posts/2020-03-11-covid-projections/</loc>
     <lastmod>2020-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/archives/</loc>
+    <loc>https://williammarble.co/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/about-site/</loc>
+    <loc>https://williammarble.co/about-site/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/teaching/</loc>
+    <loc>https://williammarble.co/teaching/</loc>
   </url><url>
-    <loc>http://localhost:4321/cv/</loc>
+    <loc>https://williammarble.co/cv/</loc>
   </url><url>
-    <loc>http://localhost:4321/research/</loc>
+    <loc>https://williammarble.co/research/</loc>
   </url>
 </urlset>
